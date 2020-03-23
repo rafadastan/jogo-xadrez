@@ -1,4 +1,4 @@
-﻿using Jogo_Xadrez.chessboard;
+﻿using chessboard;
 using System;
 
 namespace Jogo_Xadrez
@@ -7,11 +7,8 @@ namespace Jogo_Xadrez
     {
         static void Main(string[] args)
         {
-            Position position;
-
-            position = new Position(3,4);
-
-            Console.WriteLine("Position: " + position);
+            Chessboard chessboard = new Chessboard(8,8);
+            Console.WriteLine(chessboard);
         }
     }
 }
