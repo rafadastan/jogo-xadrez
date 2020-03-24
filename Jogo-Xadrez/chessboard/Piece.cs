@@ -8,9 +8,9 @@ namespace chessboard
         public int numberOfMoves { get; protected set; }
         public Chessboard chess { get; protected set; }
 
-        public Piece(Position position, Colors colors, Chessboard chess)
+        public Piece(Colors colors, Chessboard chess)
         {
-            this.position = position;
+            this.position = null;
             this.colors = colors;
             this.chess = chess;
             this.numberOfMoves = 0;

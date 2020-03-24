@@ -17,5 +17,11 @@
         {
             return pieces[row, column];
         }
+
+        public void putPieces(Piece p, Position pos)
+        {
+            pieces[pos.row, pos.column] = p;
+            p.position = pos;
+        }
     }
 }
