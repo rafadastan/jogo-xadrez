@@ -11,7 +11,11 @@
             this.rows = rows;
             this.column = column;
             pieces = new Piece[rows, column];
+        }
 
+        public Piece piece(int row, int column)
+        {
+            return pieces[row, column];
         }
     }
 }

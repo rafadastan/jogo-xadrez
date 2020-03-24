@@ -8,7 +8,10 @@ namespace Jogo_Xadrez
         static void Main(string[] args)
         {
             Chessboard chessboard = new Chessboard(8,8);
-            Console.WriteLine(chessboard);
+
+            Screen.printChessBoard(chessboard);
+
+            Console.WriteLine();
         }
     }
 }
