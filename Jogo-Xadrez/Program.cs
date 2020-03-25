@@ -8,26 +8,11 @@ namespace Jogo_Xadrez
     {
         static void Main(string[] args)
         {
-            try
-            {
-                Chessboard chessboard = new Chessboard(8, 8);
+            PositionChessboard position = new PositionChessboard('a', 1);
 
-                chessboard.putPieces(new Tower(chessboard, Colors.Black), new Position(0, 0));
+            Console.WriteLine(position);
 
-                chessboard.putPieces(new Tower(chessboard, Colors.Black), new Position(1, 3));
-
-                chessboard.putPieces(new King(chessboard, Colors.Black), new Position(2, 4));
-
-                chessboard.putPieces(new King(chessboard, Colors.Black), new Position(0, 9));
-
-                Screen.printChessBoard(chessboard);
-
-                Console.WriteLine();
-            }
-            catch (ChessboardException e)
-            {
-                Console.WriteLine( e.Message);
-            }
+            Console.ReadLine();
         }
     }
 }
