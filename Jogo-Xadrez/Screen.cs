@@ -9,12 +9,12 @@ namespace Jogo_Xadrez
         {
             for (int i = 0; i < chessboard.rows; i++)
             {
-                System.Console.Write(8 - i + " ");
+                Console.Write(8 - i + " ");
                 for (int j = 0; j < chessboard.column; j++)
                 {
                     if (chessboard.piece(i,j) == null)
                     {
-                        System.Console.Write("- ");
+                        Console.Write("- ");
                     }
                     else
                     {
@@ -22,16 +22,16 @@ namespace Jogo_Xadrez
                         Console.Write(" ");
                     }
                 }
-                System.Console.WriteLine();
+                Console.WriteLine();
             }
-            System.Console.WriteLine(" A B C D E F G H ");
+            Console.WriteLine(" A B C D E F G H ");
         } 
 
         public static void printPiece(Piece piece)
         {
             if (piece.colors == Colors.Write)
             {
-                System.Console.WriteLine(piece);
+                Console.WriteLine(piece);
             }
             else
             {
