@@ -10,18 +10,9 @@ namespace Jogo_Xadrez
         {
             try
             {
-                Chessboard chessboard = new Chessboard(8, 8);
+                ChessMatch match = new ChessMatch();
 
-                chessboard.putPieces(new Tower(chessboard, Colors.Black), new Position(0, 0));
-
-                chessboard.putPieces(new Tower(chessboard, Colors.Black), new Position(1, 3));
-
-                chessboard.putPieces(new King(chessboard, Colors.Black), new Position(2, 4));
-
-                chessboard.putPieces(new Tower(chessboard, Colors.Write), new Position(3, 5));
-
-
-                Screen.printChessBoard(chessboard);
+                Screen.printChessBoard(match.chessboard);
 
                 Console.WriteLine();
             }
